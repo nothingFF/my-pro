@@ -8,6 +8,7 @@ import VueAxios from 'vue-axios'
 
 Vue.config.productionTip = false
 Vue.use(VueAxios, Axios)
+Vue.prototype.HOST = '/api'
 
 /* eslint-disable no-new */
 new Vue({
