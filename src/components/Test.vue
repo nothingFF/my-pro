@@ -6,8 +6,6 @@
 
 <script>
 
-import Axios from 'axios'
-
 export default {
   name: 'test',
   data () {
@@ -16,7 +14,7 @@ export default {
     }
   },
   mounted () {
-    Axios
+    this.axios
       .get('https://www.runoob.com/try/ajax/json_demo.json')
       .then(response => (this.info = response))
       .catch(function (error) { // 请求失败处理
